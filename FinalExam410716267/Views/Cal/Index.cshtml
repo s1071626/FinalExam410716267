@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>星期幾計算</h2>
+
+@using (Html.BeginForm("Index","Cal", FormMethod.Post))
+{ 
+    <p>請輸入數字 : @Html.TextBox(name:"week") <input type="submit" value="查詢"></p>
+    <p>查詢結果 : @ViewBag.Result</p>
+}
+
