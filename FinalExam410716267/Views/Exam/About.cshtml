@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "about";
+}
+@{
+    var name = "姓名 : ";
+    var number = "410716267";
+    var message = "學號 : " + number;
+    string[] fruits = {"蘋果", "香蕉", "荔枝", "鳳梨", "西瓜" };
+}
+<div>
+    @name @ViewBag.name<br/>
+    @message <br/>
+    喜歡的水果: <br/>
+    </div>
+<ol>
+    @foreach (var item in fruits)
+    {
+       <li>@item</li>
+    }
+</ol>
+
